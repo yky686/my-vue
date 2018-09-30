@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>北京问斗网络科技有限公司</title>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+     <meta name="keywords" content="问斗,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+   <!--  <link rel="stylesheet" href="./css/app.css"> -->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <!-- 导航  -->
+    <nav class="navbar navbar-default" id="nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" id="navHeader">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#" style="font-size:30px;">
+                  wendou
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" >
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">聚合支付</a></li>
+                        <li><a href="#">会员系统</a></li>
+                        <li><a href="#">多级商户系统</a></li>
+                        <li><a href="#">资金存管</a></li>
+                        <li><a href="#">区块链优惠券</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">跨境支付</a></li>
+                        <li><a href="#">多级代理分销</a></li>
+                        <li><a href="#">多门店系统</a></li>
+                        <li><a href="#">新零售</a></li>                        
+                      </ul>
+                    </li>
+                    <li><a href="#">案例</a></li>
+                    <li><a href="#">定价</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">帮助中心</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">开发者中心 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">开发指南</a></li>
+                        <li><a href="#">API 文档</a></li>
+                        <li><a href="#">SDK 下载</a></li>
+                        <li><a href="#">开发者社区</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="col-sm-10 col-sm-offset-2">
+                        <a class="btn btn-success btn-outline btn-sm" href="">
+                          登录
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-sm-10 ">
+                        <a class="btn btn-danger btn-outline btn-sm" href="">
+                          注册
+                        </a>
+                      </div>
+                    </li>
+                    <li class="show1"><a href="#">登录</a></li>
+                    <li class="show1"><a href="#">注册</a></li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end -->
+
+    <!-- 轮播图 -->
+     <!-- <section class="hero fullheight lun">
+          <div class="row align-center">
+              <div class="small-12 medium-9 large-9 ">
+                  <div class="row">
+                      <div class="small-12 medium-5 columns align-self-middle">
+                          <div class="hero-scene-intro">
+                              <div class="viewport hide-for-small-only">
+                                  <ul class="hero-scene-text" >
+                                      <li>
+                                          <h1 class="title" data-t="index.hero.scene.transfer">1 个小时<br>拥有余额功能</h1>
+                                          <h4 class="intro" data-t="index.hero.subheading">实现红包、优惠券等应用场景。</h4>
+                                          <p>
+                                              <a href="https://www.pingxx.com/account" class="button cta" data-t="index.hero.cta">了解会员账户系统 →</a>
+                                          </p>
+                                      </li>
+                                      <li>
+                                          <h1 class="title" data-t="index.hero.scene.offline">1 个工程师接入<br>多级商户系统</h1>
+                                          <h4 class="intro" data-t="index.hero.subheading">实现高效灵活的分润管理。</h4>
+                                          <p>
+                                              <a href="https://www.pingxx.com/platform" class="button cta" data-t="index.hero.cta">了解多级商户系统 →</a>
+                                          </p>
+                                      </li>
+                                      <li>
+                                          <h1 class="title" data-t="index.hero.scene.web">快速打通<br>跨境支付</h1>
+                                          <h4 class="intro" data-t="index.hero.subheading">让外贸电商在线支付更便捷。</h4>
+                                          <p>
+                                              <a href="https://www.pingxx.com/cross_border" class="button cta" data-t="index.hero.cta">了解跨境支付 →</a>
+                                          </p>
+                                      </li>
+                                      <li>
+                                          <h1 class="title" data-t="index.hero.scene.app">7 行代码<br>接入支付</h1>
+                                          <h4 class="intro" data-t="index.hero.subheading">覆盖所有主流支付渠道及分期渠道。</h4>
+                                          <p>
+                                              <a href="https://www.pingxx.com/products" class="button cta" data-t="index.hero.cta">了解聚合支付 →</a>
+                                          </p>
+                                      </li>
+                                      <li>
+                                          <h1 class="title" data-t="index.hero.scene.transfer">1 个小时<br>拥有余额功能</h1>
+                                          <h4 class="intro" data-t="index.hero.subheading">实现红包、优惠券等应用场景。</h4>
+                                          <p>
+                                              <a href="https://www.pingxx.com/account" class="button cta" data-t="index.hero.cta">了解会员账户系统 →</a>
+                                          </p>
+                                      </li>
+                                  </ul>
+                              </div>
+      
+                              <div>
+                                  <h1 class="title show-for-small-only phone-title" style="display: none;">1 个小时<br>拥有余额功能</h1>
+                                  <h1 class="title show-for-small-only phone-title" style="display: none;">1 个工程师接入<br>多级商户系统</h1>
+                                  <h1 class="title show-for-small-only phone-title" style="display: block;">快速打通<br>跨境支付</h1>
+                                  <h1 class="title show-for-small-only phone-title" style="display: none;">7 行代码<br>接入支付</h1>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row align-center slide-line-box">
+      
+              <div class="large-9 columns hide-for-small-only slide-line">
+                  <div class="row  medium-up-4 large-up-4 align-middle">
+                      <div class="column slide-line-active" id="slideLine1">
+                          <div class="bg-line">
+                              <div class="active-line"></div>
+                          </div>
+                          <div class="line-desc">
+                              图1
+                              会员账户系统
+                          </div>
+                      </div>
+                      <div class="column" id="slideLine2">
+                          <div class="bg-line">
+                              <div class="active-line"></div>
+                          </div>
+                          <div class="line-desc">
+                              图2
+                              多级商户系统
+                          </div>
+                      </div>
+                      <div class="column" id="slideLine3">
+                          <div class="bg-line">
+                              <div class="active-line"></div>
+                          </div>
+                          <div class="line-desc">
+                              图3
+                              跨境支付
+                          </div>
+                      </div>
+                      <div class="column" id="slideLine4">
+                          <div class="bg-line">
+                              <div class="active-line"></div>
+                          </div>
+                          <div class="line-desc">
+                              图3
+                              聚合支付
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+     </section> -->
+    <div style="height:300px;background:red;width:100%;">
+      
+    </div>
+    <!-- end -->
+    <!-- 支付通道 -->
+    <div class="col-sm-12 payloads">
+      <h2>聚合支付通道</h2>
+      <div class="loads container text-center" style="margin-top:3%;">
+        <ul class="row ">
+          <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="imglist1">
+                <img src="./imgs/card.png" alt="">
+                <p>银行通道</p>
+                <a href="" class="btn btn-sm ">了解详情</a>
+            </div>
+          </li>
+          <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="imglist1">
+                <img src="./imgs/pay.png" alt="">
+                <p>第三方支付通道</p>
+                <a href="" class="btn btn-sm ">了解详情</a>
+            </div>
+          </li>
+          <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="imglist1">
+                <img src="./imgs/zhifu.png" alt="">
+                <p>支付宝通道</p>
+                <a href="" class="btn btn-sm ">了解详情</a>
+            </div>
+          </li>
+          <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="imglist1">
+                <img src="./imgs/weixin.png" alt="">
+                <p>微信支付通道</p>
+                <a href="" class="btn btn-sm ">了解详情</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- 快速支付 -->
+    <div class="quick col-sm-12">
+      <div class="quick-clock">
+        <div class="hour">
+        </div>
+        <div class="minute">
+        </div>
+        <div class="second">
+        </div>
+      </div>
+      <div class="quick-content col-sm-12">
+        <div class="word col-sm-4 col-sm-offset-4">
+          <h2>快速接入流程</h2>
+          <p>
+            专业 &nbsp;&nbsp;快速 &nbsp;&nbsp;安全
+          </p>
+        </div>         
+        <ul class="col-sm-12">
+          <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+              <img src="./imgs/pic1.png" alt="">
+            </div>              
+            <p class="col-sm-12">商户注册</p>
+          </li>
+          <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+              <img src="./imgs/pic2.png" alt="">
+            </div>   
+            <p class="col-sm-12">线上测试</p>
+          </li>
+          <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+                <img src="./imgs/pic3.png" alt="">
+            </div>
+            <p class="col-sm-12">参数配置</p>
+          </li>
+          <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+                <img src="./imgs/pic4.png" alt="">
+            </div>
+            <p class="col-sm-12">完成接入</p>
+          </li>
+        </ul>
+      </div>
+    </div>  
+    <div class="quickApp">
+        <h3>快速接入流程</h3>
+        <p>
+          专业 &nbsp;&nbsp;快速 &nbsp;&nbsp;安全
+        </p>         
+        <ul>
+          <li>
+            <img src="./imgs/pic1.png" alt="">      
+            <small>商户注册</small>
+          </li>
+           <li>
+            <img src="./imgs/pic2.png" alt="">      
+            <small>线上测试</small>
+          </li>
+           <li>
+            <img src="./imgs/pic3.png" alt="">      
+            <small>参数配置</small>
+          </li>
+           <li>
+            <img src="./imgs/pic4.png" alt="">      
+            <small>完成接入</small>
+          </li>
+          <!-- <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+              <img src="./imgs/pic2.png" alt="">
+            </div>   
+            <p class="col-sm-12">线上测试</p>
+          </li>
+          <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+                <img src="./imgs/pic3.png" alt="">
+            </div>
+            <p class="col-sm-12">参数配置</p>
+          </li>
+          <li class="col-sm-3">
+            <div class="col-sm-6 col-sm-offset-3">
+                <img src="./imgs/pic4.png" alt="">
+            </div>
+            <p class="col-sm-12">完成接入</p>
+          </li> -->
+        </ul>
+    </div>
+    <!-- end -->
+    <!-- 用交易连接一切 -->
+    <div class="line col-sm-12 col-sx-12">
+      <h2>用交易连接一切</h2>
+      <p></p>
+    </div>
+    <!-- end -->
+    <div class="footer col-sm-12">
+     
+    </div>
+  </body>
+</script>
+</html>
